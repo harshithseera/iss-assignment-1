@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water - The Truth</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        
+        .comments-container {
+            margin-top: 20px;
+        }
+
+        .container {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 2px 2px;
+        }
+
+        .comment b {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body style="background-color: #d9534f;">
+
+    
+    <div class="blog-post" >
+        <h3 style="color: white;">Water - The Truth</h3>
+        <p style="color: white;">Date: January 23, 2024</p>
+        <p style="color: white;">
+            Doctors speak about the importance of water all the time. Everybody speaks of the importance of water. Do we really 
+            need it? What is the truth about water? Let's find out.
+        </p>
+        <p style="color: white;">
+            I have been involved in an experiment for all my 18 years of existance, where I try to survive on as little water 
+            possible. I have been successful in this experiment and I have been able to survive on as little as 1 litre of water 
+            a week. So the question is why is the world so obsessed with water? Perhaps all the big brand water companies are 
+            trying to milk the common man for every last penny. Or perhaps it's the government's ploy to keep us under control. 
+            Considering that mankind as a whole has succumbed to the weakness of water a long long time ago, we will never know 
+            the truth. 
+        </p>
+
+        
+        <div id="like-container">
+            
+            <img id="like-button" src="unliked.png" alt="Like Button" onclick="toggleLike()">
+            
+            
+            <p id="like-counter" style="color: white;">32</p>
+        </div>
+    </div>
+
+    
+    <div class="blog-post comments-container">
+        <h3>Comments</h3>
+        <div class="container">
+            <b>Kanye:</b>
+            <p>HELL YEAH!!! Stay away from water. Stay safe, brothers.</p>
+        </div>
+        <div class="container">
+            <b>Justin:</b>
+            <p>My father was killed by the Government for speaking up about this. BUT YOU CAN'T HIDE THE TRUTH. WATER WILL NEVER PREVAIL.</p>
+    </div>
+
+    <script>
+        let likeCounter = 32;
+        let change = -1;
+        function toggleLike() {
+            change = change * -1;
+            likeCounter = likeCounter + change;
+            document.getElementById('like-counter').innerText = likeCounter;
+            const likeButton = document.getElementById('like-button');
+            likeButton.src = likeCounter === 32 ? 'unliked.png' : 'liked.png';
+        }
+    </script>
+
+</body>
+</html>

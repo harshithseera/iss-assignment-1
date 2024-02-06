@@ -1,0 +1,83 @@
+body {
+    background-color: #333;
+    color: #fff;
+}
+
+#header {
+    background-color: #333;
+}
+
+#landing {
+    background-color: #555;
+    color: white;
+}
+
+#landing button {
+    color: white;
+    background-color: #555;
+}
+
+#about {
+    color: #fff;
+    background-color: #333;
+}
+
+#about-text {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border: 2px solid #2c3e50;
+}
+
+#education {
+    background-color: #000;
+    color: #fff;
+}
+
+.education-entry h3 {
+    color: #555;
+}
+
+.education-entry p {
+    color: #fff;
+}
+
+#achievements {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.achievement-entry {
+    background-color: #333;
+}
+
+.achievement-entry p {
+    color: #fff;
+}
+
+#skills {
+    background-color: #555;
+    color: #fff;
+}
+
+.skill-entry {
+    background-color: #333;
+    border: 2px solid #555;
+}
+
+.skill-entry p {
+    color: #fff;
+}
+
+#blog {
+    background-color: #333;
+}
+
+.blog-post {
+    background-color: #555;
+    color: #fff;
+}
+
+#contact-me {
+    background-color: #222;
+    color: white;
+}

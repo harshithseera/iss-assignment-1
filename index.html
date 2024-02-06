@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Harshith Seera</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="light-mode.css" id="theme-style">
+    </head>
+    <body style="margin: 0; padding: 0;">
+
+        <div id="header">
+            <table id="landing">
+                <tr style="font-size: 20px;">
+                    <td colspan="5" align="left" style="padding-left: 50px;">Harshith Seera</td>
+                    <td colspan="7" align="right">
+                        <button onclick="scrollAbout()">About</button>
+                        <button onclick="scrollEducation()"">Education</button>
+                        <button onclick="scrollAchievements()">Achievements</button>
+                        <button onclick="scrollSkills()">Skills</button>
+                        <button onclick="scrollBlog()">Blog</button>
+                        <button onclick="scrollContactMe()">Contact Me</button>
+                        <button id="theme-toggle"><img src="dark-theme.svg"></button>
+                    </td>
+                </tr>
+            </table>
+            
+            <section id="about">
+
+                <div>
+                    <img src="me.jpeg" alt="Your Profile Image">
+                </div>
+
+                <div id="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        Hello! I'm Harshith Seera, a Computer Science and Engineering undergraduate at IIIT Hyderabad. I'm 
+                        passionate about Minecraft and bad movies.
+                    </p>
+                    <p>
+                        I'm looking forward to making cool stuff and learning new things in the future. Keep checking my 
+                        website for cool updates :)
+                    </p>
+                </div>
+
+            </section>
+
+            <section id="education">
+
+                <div class="education-heading">                
+                    <h2>Education</h2>
+                </div>
+
+                <div class="education-entries">
+                    <div class="education-entry">
+                        <h3>Slate-The School</h3>
+                        <p>2011 - 2023</p>
+                        <p>Level: School</p>
+                        <p>Subjects: Math, Physics, Chemistry, Biology, English, Telugu, Hindi</p>
+                    </div>
+
+                    <div class="education-entry">
+                        <h3>IIIT Hyderabad</h3>
+                        <p>2023 - 2027</p>
+                        <p>Level: Undergraduate</p>
+                        <p>Course: Computer Scienece and Engineering</p>
+                    </div>
+
+                </div>
+
+            </section>
+            
+            <section id="achievements">
+
+                <div class="achievement-heading">
+                    <h2>Achievements</h2>
+                </div>
+
+                <div class="achievement-entries">
+
+                    <div class="achievement-entry">
+                        <p>Assistant Head Boy in Slate-The School (2019-2023)</p>
+                    </div>
+
+                    <div class="achievement-entry">
+                        <p>Member of LitClub at IIIT-H (2023-present)</p>
+                    </div>
+
+                </div>
+
+            </section>
+            
+            <section id="skills">
+                <div class="skills-heading">
+                    <h2>Skills</h2>
+                </div>
+                <div class="skills-list">
+                    <div class="skill-entry">
+                        <div>
+                            <p>Standard Galactic Language (Professional capacity)</p>
+                            <p>English, Telugu, Hindi</p>
+                            <p>C Language (Basic Profficiency)</p>
+                            <p>HTML, CSS, JavaScript, Python (Introductory)</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <section id="blog">
+                <div class="blog-heading">
+                    <h2>Blog</h2>
+                </div>
+                <div class="blog-posts">
+
+                    <a href="blog-post-1.html" class="blog-post-link">
+                        <div class="blog-post">
+                            <h3>Water - The Truth</h3>
+                            <p>Date: January 23, 2024</p>
+                            <p>
+                                Doctors speak about the importance of water all the time. Everybody speaks of the importance of 
+                                water. Do we really need...
+                            </p>
+                        </div>
+                    </a>
+                
+                    <a href="blog-post-2.html" class="blog-post-link">
+                        <div class="blog-post">
+                            <h3>Blog Post Title 2</h3>
+                            <p>Date: January 2, 2024</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel erat non metus commodo viverra. Nullam sagittis ut arcu vel ullamcorper.</p>
+                        </div>
+                    </a>
+                
+                </div>
+                
+
+            </section>
+
+            <section id="contact-me">
+
+                <h4>Contact Me: </h4>
+                <a href="https://www.instagram.com/harshithseera" target="_blank" style="text-decoration: none; color: inherit;">
+                    <img src="instagram.png" alt="Instagram Icon" style="width: 20px; height: 20px; margin-left: 10px;">
+                </a>
+                <a href="https://github.com/harshithseera" target="_blank" style="text-decoration: none; color: inherit;">
+                    <img src="github.png" alt="GitHub Icon" style="width: 20px; height: 20px; margin-left: 10px;">
+                </a>
+                <a href="mailto:harshith.seera@students.iiit.ac.in" style="text-decoration: none; color: inherit;">
+                    <img src="email.png" alt="Email Icon" style="width: 20px; height: 20px; margin-left: 10px;">
+                </a>
+                <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" style="text-decoration: none; color: inherit;">
+                    <img src="linkedin.png" alt="LinkedIn Icon" style="width: 20px; height: 20px; margin-left: 10px;">
+                </a>
+                <a href="resume.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+                    <img src="resume.png" alt="Resume Icon" style="width: 20px; height: 20px; margin-left: 10px;">
+                </a>
+            </section>
+            
+
+            
+        </div>
+
+
+        <script>
+            function scrollAbout() {
+                const sec = document.getElementById("about");
+                sec.scrollIntoView();
+            }
+            function scrollEducation() {
+                const sec = document.getElementById("education");
+                sec.scrollIntoView();
+            }
+            function scrollAchievements() {
+                const sec = document.getElementById("achievements");
+                sec.scrollIntoView();
+            }
+            function scrollSkills() {
+                const sec = document.getElementById("skills");
+                sec.scrollIntoView();
+            }
+            function scrollBlog() {
+                const sec = document.getElementById("blog");
+                sec.scrollIntoView();
+            }
+            function scrollContactMe() {
+                const sec = document.getElementById("contact-me");
+                sec.scrollIntoView();
+            }
+            const mode = document.getElementById('theme-toggle');
+            mode.addEventListener('click', () => {
+                const cur = document.getElementById('theme-style');
+                cur.href = cur.href.includes('light-mode') ? 'dark-mode.css' : 'light-mode.css';
+            });
+        </script>
+    </body>
+</html>
